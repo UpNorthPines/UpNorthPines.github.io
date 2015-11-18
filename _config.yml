@@ -1,27 +1,23 @@
 # Jykell configuration
 markdown: redcarpet
-highlighter: pygments
-paginate: 5
-language: 'en-uk'
+# highlighter: pygments
+language: 'en-us'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: 'Up North Pines'
+description: "Christmas Tree Farm and Nursery"
 
 # Author's info
-author: 'Casper McFadden'
+author: 'Jesse Clark'
 # edit 'categories' in the front matter of every post to match this username
-username: casper
-bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
-location: 'Maine, USA'
-url: 'http://biomadeira.github.io/jasper/'
-image: 'assets/images/casper.png'
+username: clarkguru
 
-short_url: 'biomadeira.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+# short_url: 'biomadeira.github.io/jasper/'
+# google_analytics: UA-69281367-1
+# disqus: username
+# # edit baseurl to simply '/' if using as your personal page (instead of a project page)
+# baseurl: /jasper/
+baseurl: ''
 
 # Permalinks
 permalink: /:title
@@ -30,7 +26,7 @@ permalink: /:title
 
 
 # gems and other configs
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 exclude: [vendor]
 
 # Additional settings available on the front-matter
