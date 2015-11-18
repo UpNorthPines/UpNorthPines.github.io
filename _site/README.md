@@ -1,2 +1,0 @@
-# UpNorthPines.github.io
-
