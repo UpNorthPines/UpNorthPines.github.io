@@ -10,44 +10,43 @@ current: home
 <!-- < default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 <script>
-  window.fbAsyncInit = function() {
+  window.fbAsyncInit = function () {
     FB.init({
-      appId      : '897406627022997',
-      xfbml      : true,
-      version    : 'v2.5'
+      appId: '897406627022997',
+      xfbml: true,
+      version: 'v2.5'
     });
   };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
 <!-- The big featured header  -->
-<header class="main-header {% if page.cover %}"
-        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
-    <!-- <nav class="main-nav overlay clearfix">
+<header class="main-header {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+  <!-- <nav class="main-nav overlay clearfix">
         {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
         {% if page.navigation %}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         {% endif %}
     </nav> -->
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">{{ site.description }}</h2>
-        </div>
+  <div class="vertical">
+    <div class="main-header-content inner">
+      <h1 class="page-title">{{ site.name }}</h1>
+      <h2 class="page-description">{{ site.description }}</h2>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+  </div>
+  <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <main id="content" class="content" role="main">
   <h1>Hours</h1>
-  <p>Starting 12/17/2017 we will be closed for the season until Black Friday 2018</p>
-  <!--<h2>Black Friday Schedule</h2>
+  <!-- <p>Starting 12/17/2017 we will be closed for the season until Black Friday 2018</p> -->
+  <h2>Black Friday Schedule</h2>
   <ul>
     <li>Friday - Sunday: 9 AM to 5 PM</li>
   </ul>
@@ -56,24 +55,27 @@ current: home
     <li>Monday & Tuesday: Closed</li>
     <li>Wednesday - Friday: 1 PM to 5 PM</li>
     <li>Saturday & Sunday: 9 AM to 5 PM</li>
-  </ul>-->
+  </ul>
   <h1>Pricing</h1>
   <ul>
     <li>All Trees $40</li>
-    <li>Cash and  check accepted</li>
+    <li>Cash and check accepted</li>
     <!--<li>*Credit card accepted on weekends (*$3 to swipe card/$4 to manually enter card # to cover Credit Card Processer fees - totals under $100)</li>-->
   </ul>
   <h1>Christmas Tree Types</h1>
-  <ul><li>Scotch Pine</li><li>White Pine</li><li>Austrian Pine</li><li>Canaan Fir</li></ul>
+  <ul>
+    <li>Scotch Pine</li>
+    <li>White Pine</li>
+    <li>Austrian Pine</li>
+    <li>Canaan Fir</li>
+  </ul>
   <h1>Where We Are Located</h1>
   <div class='map'>
-  <iframe id=map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.2990741222497!2d-90.68606168416076!3d41.606043990373585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e3b604500f2397%3A0x3a0695c7314dde93!2s8319+Buffalo+Ave%2C+Davenport%2C+IA+52806!5e0!3m2!1sen!2sus!4v1447813949599" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+    <iframe id=map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.2990741222497!2d-90.68606168416076!3d41.606043990373585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e3b604500f2397%3A0x3a0695c7314dde93!2s8319+Buffalo+Ave%2C+Davenport%2C+IA+52806!5e0!3m2!1sen!2sus!4v1447813949599"
+      width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
 
-<div
-  class="fb-lik
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
+  <div class="fb-lik
+  data-share=" true" data-width="450" data-show-faces="true">
+  </div>
 </main>
