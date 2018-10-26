@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    {% include analytics.html %}
+
     <!-- [[! Document Settings ]] -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +15,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico" >
+    <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico">
 
     <!-- [[! Styles'n'Scripts ]] -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/screen.css" />
@@ -23,6 +26,7 @@
     {% include head.html %}
 
 </head>
+
 <body class="{% if page.url contains 'page2' %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
 
     {% include navigation.html %}
@@ -33,7 +37,8 @@
         {{ content }}
 
         <footer class="site-footer clearfix">
-          <section class="copyright"><a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; {{  site.time | date: '%Y' }}</section>
+            <section class="copyright"><a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; {{ site.time | date:
+                '%Y' }}</section>
         </footer>
     </div>
     <!-- [[! Ghost outputs important scripts and data with this tag ]] -->
@@ -43,4 +48,5 @@
     <script type="text/javascript" src="{{ site.baseurl }}assets/js/index.js"></script>
 
 </body>
+
 </html>
