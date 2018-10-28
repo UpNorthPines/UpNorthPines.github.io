@@ -27,13 +27,15 @@ current: home
   }(document, 'script', 'facebook-jssdk'));
 </script>
 <!-- The big featured header  -->
-<header class="main-header {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+<div id='part-js'></div>
+<header id='header' class="main-header {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
   <!-- <nav class="main-nav overlay clearfix">
         {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
         {% if page.navigation %}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         {% endif %}
     </nav> -->
+
   <div class="vertical">
     <div class="main-header-content inner">
       <h1 class="page-title">{{ site.name }}</h1>
@@ -78,4 +80,13 @@ current: home
   <div class="fb-lik
   data-share=" true" data-width="450" data-show-faces="true">
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      particlesJS.load('part-js', '/assets/js/particlesjs-config.json', function () {
+      });
+
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 </main>
