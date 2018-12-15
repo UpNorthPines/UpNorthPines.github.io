@@ -21,9 +21,104 @@
   position: absolute
   top: 0
   left: 0
-  z-index: 10
+  z-index: 20
   height: 100vh
   width: 100vw
   margin: 0
   padding: 0
   max-width: 100%
+
+.sticker
+
+  background: #e43
+  position: absolute
+  top: 10%
+  left: 10%
+  text-align: center
+  line-height: 50px
+  letter-spacing: 1px
+  color: #f0f0f0
+  transform: rotate(-20deg)
+  padding: 2em
+  z-index: 15
+
+.sticker > div > h2
+  color: #f0f0f0
+
+
+
+
+
+.sticker.shadow 
+  box-shadow: .5em .5em 0 white, -.5em -.5em 0 white, .5em -.5em 0 white, -.5em .5em white
+  z-index: 12
+  /*0 0 3px rgba(0,0,0,.3)*/
+
+.sticker.shadow::after
+  box-shadow: 0 0 .5em rgba(0,0,0, .5)
+  content: " "
+  height: Calc(100% + 1em)
+  width: Calc(100% + 1em)
+  position: absolute
+  top: -.5em
+  left: -.5em
+  z-index: 10
+
+
+/* Different positions */
+
+.corner-ribbon.top-left 
+  top: 25px
+  left: -50px
+  transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg)
+
+
+.corner-ribbon.top-right 
+  top: 25px
+  right: -50px
+  left: auto
+  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg)
+
+
+.corner-ribbon.bottom-left 
+  top: auto
+  bottom: 25px
+  left: -50px
+  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg)
+
+
+.corner-ribbon.bottom-right 
+  top: auto
+  right: -50px
+  bottom: 25px
+  left: auto
+  transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg)
+
+
+/* Colors */
+
+.sticker.white 
+  background: #f0f0f0 
+  color: #555
+.sticker.black 
+  background: #333
+.sticker.grey 
+  background: #999
+.sticker.blue 
+  background: #39d
+.sticker.green 
+  background: #2c7
+.sticker.turquoise 
+  background: #1b9
+.sticker.purple 
+  background: #95b
+.sticker.red 
+  background: #e43
+.sticker.orange 
+  background: #e82
+.sticker.yellow
+  background: #ec0
